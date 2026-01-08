@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #C5D9F2;
+}
+
+#root {
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+::placeholder {
+    font-size: 12px;
+    justify-content: center;
+}
+  
+.card-movido {
+transform: translateX(-280px);
+transition: transform 0.5s ease-in-out
+}
+
+.cardMovidoDireita {
+    transform: translateX(-280px);
+    transition: transform 0.5s ease-in-out
+}
