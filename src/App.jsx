@@ -27,6 +27,8 @@ function App() {
         body: JSON.stringify({ name: user, password, email })
       });
 
+      alert("Usuário criado com sucesso!");
+
     } catch (err) {
       console.error(err);
       alert("Erro ao enviar os dados!");
