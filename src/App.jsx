@@ -27,9 +27,6 @@ function App() {
         body: JSON.stringify({ name: user, password, email })
       });
 
-      const data = await res.json();
-      alert(data.message);
-
     } catch (err) {
       console.error(err);
       alert("Erro ao enviar os dados!");
