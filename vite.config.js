@@ -4,5 +4,15 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.VITE_BASE_PATH || "/login_interface"
+  base: process.env.VITE_BASE_PATH || "",
+  server: {
+    host: true,     
+    port: 5173,          
+    strictPort: true,    
+    hmr: {
+      protocol: "ws",    
+      host: "localhost",
+      port: 5173
+    }
+  }
 })
